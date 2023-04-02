@@ -27,7 +27,6 @@ namespace BeeHiveManager
             double honeyConsumed = HoneyConsumptionRate();
             shiftNumber++;
             string report = "Raport zmiany nr " + shiftNumber + "\r\n";
-            report += "Królowa zużyła " + this.HoneyConsumptionRate() + " jednostek miodu\r\n";
             for (int i = 0; i < workers.Length; i++)
             {
                 honeyConsumed += workers[i].HoneyConsumptionRate();
