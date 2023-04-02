@@ -45,5 +45,9 @@ namespace BeeHiveManager
             report += "Całkowite spożycie miodu wynosi " + (int)honeyConsumed + " jednostek\r\n";
             return report;
         }
+        public void DefendTheHive(IStingPatrol patroller)
+        {
+
+        }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BeeHiveManagerV2
 {
-    class NectarCollector
+    class NectarCollector : Bee
     {
-        public NectarCollector(string[] jobsICanDo, double weightMg):base(jobsICanDo,weightMg)
+        public NectarCollector(double weightMg):base(weightMg)
         {
             
         }
@@ -28,4 +28,11 @@ namespace BeeHiveManagerV2
 
 
     }
-}
+
+    public interface INectarCollector
+    {
+        void FindFlower();
+        void GatherNectar();
+        void ReturnToHive();
+    }
+    }

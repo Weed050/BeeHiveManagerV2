@@ -17,15 +17,24 @@ namespace BeeHiveManagerV2
         public int StringLength { get; set; }
         public bool SharpenStinger()
         {
-
+            return true;
         }
         public bool LookForEnemies()
         {
-
+            return false;
         }
         public void String(string Enemy) 
         {
             
         }
     }
+
+    public interface IStingPatrol
+    {
+        public int AlertLevel { get; }
+        public int StringLength { get; set; }
+        bool LookingForEnemies();
+        int SharpenStinger(int Length);
+    }
+
 }
